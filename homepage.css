@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pictures/home_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: mediumspringgreen;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: cornflowerblue;
+}
+
+nav ul li a.active {
+    background-color: cornflowerblue;
+    color: #fff;
+    font-style: italic;
+}
+
+.introduction {
+    display: flex; 
+    background-color: lightsteelblue;
+    color: #000;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.introduction-content {
+    flex: 1; 
+}
+
+.image-container {
+    margin-left: 20px;
+}
+
+.image-container img {
+    height: 225px;
+}
+
+.left-panel,
+.right-panel {
+    background-color: blanchedalmond;
+    padding: 15px;
+    color: #fff;
+    width: 200px;
+    height: 545px;
+    position: absolute;
+    top: 0;
+}
+
+.left-panel {
+    margin: 20px;
+    left: 0;
+}
+
+.right-panel {
+    margin: 20px;
+    right: 0;
+}
+
+.left-panel p {
+    margin: 10px 0;
+    color: #000;
+}
+
+.left-panel img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.right-panel p {
+    margin: 10px 0;
+    color: #000;
+}
+
+.right-panel img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 414px) and (max-width: 896px) {
+    .container {
+        padding: 40px;
+    }
+
+    .introduction {
+        flex-direction: row;
+    }
+
+    .image-container {
+        margin: 0 20px;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 45%;
+        height: auto;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        padding: 3px;
+    }
+
+    .introduction-content {
+        margin-right: 20px;
+    }
+
+    .left-panel,
+    .right-panel {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav ul li a {
+        padding: 3px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .introduction {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        padding: 10px;
+    }
+
+    .introduction-content {
+        margin-right: 0; 
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .container {
+        padding: 15px;
+    }
+}

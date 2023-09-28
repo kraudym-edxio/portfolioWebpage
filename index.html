@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Edxio Kraudy</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Edxio Kraudy</h1>
+            <p>Web Developer | Software Engineer | Student at UoW</p>
+        </header>
+        <div class="left-panel">
+            <img src="pictures/video_games.gif" alt="Video Games Gif">
+            <p>
+                Some of my interests include playing video games, working out, and spending time with my friends.
+            </p>
+            <p>
+                I started playing video games since I was young and it's a hobby which has allowed me to disconnect from what's 
+                stressful during times of need. Working out has also allowed me to channel my energy. Furthermore, spending 
+                time with my friends has allowed me to become more sociable.
+            </p>
+        </div>
+        <div class="right-panel"> 
+            <img src="pictures/bike_picture.gif" alt="Bike Gif">
+            <p>
+                As a first job, I used to work at Antonino's Original Pizza here in Windsor, and I learned a lot about myself and my
+                work ethic. 
+            </p>
+            <p>
+                Furthermore, I applied my interest in fitness furthermore by becoming a group fitness instructor and Movati Athletic
+                (Feb 2022 - Jul 2023) and a lancer recreation group fitness instructor at the University of Windsor (May 2022 - Present).
+            </p>    
+        </div>
+        <nav>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="about-link" href="aboutpage.html">About Me</a></li>
+                <li><a id="skills-link" href="skills.html">Skills</a></li>
+                <li><a id="projects-link" href="projects.html">Projects</a></li>
+                <li><a id="resume-link"href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="introduction">
+            <div class="introduction-content">
+                <p> 
+                    My name is Edxio Kraudy and I am a fourth year student at the University of Windsor.
+                    I am set to graduate in October of this year and I am excited to officially begin my
+                    professional life. I have already acquired one and a half years of experience due to my
+                    valuable co-op placement with Nokia, and I know this will prove to be a valuable asset 
+                    during my job hunt. Overall, I have the most experience with C, Java, SQL, JavaScript, 
+                    and HTML (using Bootstrap, Polymer components, DataTables, et.), however I am also versed 
+                    in Python, C++, and C#. Moreover, throughout my program I have been exposed to the software 
+                    engineering speciailization as well as pursuing a minor in mathematics. I am thankful regarding
+                    the education choices I've made and I am striving to accomplish great milestones.
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="pictures/profile_picture.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href;
+            const homeLink = document.getElementById("home-link");
+
+            if (currentPageUrl.includes("index.html")) {
+                homeLink.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+</html>

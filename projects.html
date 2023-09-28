@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Edxio Kraudy</title>
+  <link rel="stylesheet" href="projectspage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Edxio Kraudy</h1>
+            <p>Web Developer | Software Engineer | Student at UoW</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="about-link" href="aboutpage.html">About Me</a></li>
+                <li><a id="skills-link" href="skills.html">Skills</a></li>
+                <li><a id="projects-link" href="projects.html">Projects</a></li>
+                <li><a id="resume-link" href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="projects-content">
+            <h2>Projects</h2>
+            <div class="project-panel blue-panel">
+                <h2>WECCC IMS</h2>
+                <img src="pictures/weccc.jpg" alt="Project 1">
+                <p> Sept 2022 – Apr 2023 | Windsor, ON </p>
+                <p><b>Clients</b>: Windsor-Essex Compassion Care Community</p>
+                <p>• Received certification in Ethical Conduct for Research Involving Humans</p>
+                <p>• PDF export functionality created for reports- allows user to download selected sections of a report</p>
+                <p>• Created time series report which serves as a data visualization tool between reports- patients may compare
+                     reports from different times to determine if their health score, as well as other statistics, have improved</p>
+                <p><b>Technologies</b>: Node.js • React • mongoDB • GitHub • IntelliJ • Deployed DEV and PROD web apps</p>
+                <p><b>Focus & Concepts</b>: Peer Code Review • Test Driven Development • Implementation of User Stories</p>                 
+            </div>
+            <div class="project-panel green-panel">
+                <h2>Microblog Web Application</h2>
+                <img src="pictures/microblog.png" alt="Project 2">
+                <p>Jan – Apr 2023 | Windsor, ON</p>
+                <p>• Using Python to implement new features and create unit tests using Pytest</p>
+                <p>• Exercised GitHub repository management by creating a backlog for issues and a Jenkins webhook</p>
+                <p>• Conducted load and stress tests using locust framework during performance testing phase</p>
+                <p><b>Technologies</b>: Python • Pytest • Locust • Jenkins • Docker • GitHub • PyCharm</p>
+                <p><b>Focus & Concepts</b>: Peer Code Review • Test Driven Development • CI/CD • Security Testing</p>                 
+                <a href="https://github.com/kraudym-edxio/microblog-4110" style="color: black" _blank">GitHub Repository (Ask for permission)</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href;
+            const homeLink = document.getElementById("projects-link");
+
+            if (currentPageUrl.includes("projects.html")) {
+                homeLink.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+</html>

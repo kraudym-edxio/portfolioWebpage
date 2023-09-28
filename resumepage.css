@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pictures/resume_background.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: mediumspringgreen;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: cornflowerblue;
+}
+
+nav ul li a.active {
+    background-color: cornflowerblue;
+    color: #fff;
+    font-style: italic;
+}
+
+.resume-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border: none;
+}

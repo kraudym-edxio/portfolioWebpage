@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Edxio Kraudy</title>
+  <link rel="stylesheet" href="aboutpage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Edxio Kraudy</h1>
+            <p>Web Developer | Software Engineer | Student at UoW</p>
+        </header>
+        <div class="left-panel">
+            <h2>Contact Info</h2>
+            <p>
+               Email: kraudym@uwindsor.ca
+            </p>
+            <p>
+                LinkedIn: <a id="linkedin-link" href="https://www.linkedin.com/in/kraudym/">Visit my Profile</a>
+            </p>
+            <p>
+                Phone: (226) 787-1091
+             </p>
+            <img src="pictures/contact_me.gif" alt="Contact Me Gif">
+            <p>
+                I will get back to you as soon as possible. Thanks in advance.
+             </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="about-link" href="aboutpage.html">About Me</a></li>
+                <li><a id="skills-link" href="skills.html">Skills</a></li>
+                <li><a id="projects-link" href="projects.html">Projects</a></li>
+                <li><a id="resume-link" href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I am set to graduate October of 2023 with a degree in Honours Computer Science w/ a speciailization in Software Engineering.
+                It has been a long journey since September of 2019, thus I am excited to close this chapter and begin my life as a young 
+                professional. 
+            </p>
+            <p>
+                I have 1.5 years of professional experience in my field. This is due to my co-op placement with Nokia.
+                What started off as initially a four-month term quickly transformated into eight months once the team realized
+                it would be beneficial to keep me on until my co-op requirements were fulfilled. With Nokia I was able to work on
+                front-end developement using HTML and JavaScript, as well as back-end development using Java. The main objective of
+                my work was to create new webpages to our service portal which functioned as development tools/system admin pages.
+                After my co-op term was compleleted with Nokia I continued my work with them part time for an additional eight months.
+            </p>
+            <div class="profile-image">
+                <img src="pictures/aboutme_picture.JPG" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href;
+            const aboutLink = document.getElementById("about-link");
+
+            if (currentPageUrl.includes("aboutpage.html")) {
+                aboutLink.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+</html>

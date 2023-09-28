@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Edxio Kraudy</title>
+  <link rel="stylesheet" href="skillspage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Edxio Kraudy</h1>
+            <p>Web Developer | Software Engineer | Student at UoW</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a id="home-link" href="index.html">Home</a></li>
+                <li><a id="about-link" href="aboutpage.html">About Me</a></li>
+                <li><a id="skills-link" href="skills.html">Skills</a></li>
+                <li><a id="projects-link" href="projects.html">Projects</a></li>
+                <li><a id="resume-link" href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="skills-content">
+            <h2>Technical Skills</h2>
+            <div class="skill-box">
+                <img src="pictures/programming.jpg" alt="Programming Languages">
+                <p>
+                    Proficient in programming languages including Java, JavaScript, Python, C++, C#, and HTML.
+                </p>
+            </div>
+            <div class="skill-box">
+                <img src="pictures/web-dev.jpg" alt="Web Development">
+                <p>
+                    Skilled in front-end and back-end web development with HTML, CSS, Bootstrap, and Node.js, and Java
+                </p>
+            </div>
+            <div class="skill-box">
+                <img src="pictures/tools.png" alt="Tools and Frameworks">
+                <p>
+                    Familiar with various tools and frameworks like Git, React, and SQL databases.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href;
+            const homeLink = document.getElementById("skills-link");
+
+            if (currentPageUrl.includes("skills.html")) {
+                homeLink.classList.add("active");
+            }
+        });
+    </script>
+
+</body>
+</html>
